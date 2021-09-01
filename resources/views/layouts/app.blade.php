@@ -10,7 +10,8 @@
 
     <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+
 
     <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
       <!-- optional CDN for Foundation Icons ^^ -->
@@ -47,14 +48,6 @@
         <div class="large-3 columns">
           <h1><img src="https://via.placeholder.com/400x100&text=Logo"></h1>
         </div>
-        <div class="large-9 columns">
-          <ul class="button-group right">
-            <li><a href="#" class="button">Link 1</a></li>
-            <li><a href="#" class="button">Link 2</a></li>
-            <li><a href="#" class="button">Link 3</a></li>
-            <li><a href="#" class="button">Link 4</a></li>
-          </ul>
-        </div>
       </div>
 
       <!-- End Header and Nav -->
@@ -78,30 +71,11 @@
 
       <!-- Third Band (Image Right with Text) -->
 
-      <div class="row">
+    <div class="row">
         <div class="large-8 columns">
-        </div>
+    </div>
 
-      <!-- Footer -->
 
-      <footer class="row">
-        <div class="large-12 columns">
-          <hr />
-          <div class="row">
-            <div class="large-6 columns">
-              <p>&copy; Copyright no one at all. Go to town.</p>
-            </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <li><a href="#">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
 
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

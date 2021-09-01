@@ -22,7 +22,7 @@
           </label>
         </div>
         <div class="medium-12 cell">
-            <button>Send</button>
+            <button class="success button">Send</button>
         </div>
       </div>
     </div>
