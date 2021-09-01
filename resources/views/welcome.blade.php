@@ -27,4 +27,32 @@
       </div>
     </div>
   </form>
+
+  <table class="hover">
+      <thead>
+          <th>Email</th>
+          <th>eid</th>
+          <th>Status</th>
+          <th>Send</th>
+          <th>Last Update</th>
+      </thead>
+      <tbody>
+          @foreach ($data as $row)
+            <tr>
+                <td>{{ $row->email }}</td>
+                <td>{{ $row->eid }}</td>
+                <td>
+                    @if ($row->status == 0)
+                        Unopen
+                    @else
+                        Opened
+                    @endif
+                </td>
+                <td>{{ $row->created_at->diffForHumans() }}</td>
+                <td>{{ $row->updated_at->diffForHumans() }}</td>
+            </tr>
+          @endforeach
+      </tbody>
+  </table>
+
 @stop

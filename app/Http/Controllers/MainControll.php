@@ -11,7 +11,8 @@ class MainControll extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $data = Emailconter::all();
+        return view('welcome', compact('data'));
     }
 
     public function send(Request $request)
@@ -19,7 +20,7 @@ class MainControll extends Controller
         $conter = Emailconter::create([
             'email' => $request->get('email'),
             'status' => false,
-            'eid' => $this->generateRandomString()
+            'eid' => $this->generateRandomString(25)
         ]);
 
         $data = [
