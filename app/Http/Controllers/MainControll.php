@@ -15,7 +15,12 @@ class MainControll extends Controller
 
     public function send(Request $request)
     {
-        Mail::to($request->get('email'))->send(new TestMail());
+        $data = [
+            'name' => $request->get('name'),
+            'body' => $request->get('body')
+        ];
+
+        Mail::to($request->get('email'))->send(new TestMail($data));
         return redirect()->back();
     }
 

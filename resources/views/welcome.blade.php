@@ -12,8 +12,8 @@
             </label>
           </div>
         <div class="medium-12 cell">
-          <label>Title
-            <input type="text" name="title" placeholder="Title">
+          <label>Name
+            <input type="text" name="name" placeholder="Name">
           </label>
         </div>
         <div class="medium-12 cell">

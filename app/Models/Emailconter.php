@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Emailconter extends Model
 {
     use HasFactory;
+
+
 }

@@ -1,7 +1,9 @@
 @component('mail::message')
-# Welcome to this test
+# Welcome, {{ $data['name'] }}<br/>
 
-![Check hability!!](/assets/images/tux.png)
+{{ $data['body'] }}
+
+![](/assets/images/tux.png)
 
 @component('mail::button', ['url' => 'http://google.com'])
     Button Test
