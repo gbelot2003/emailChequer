@@ -17,7 +17,8 @@ class MainControll extends Controller
     {
         $data = [
             'name' => $request->get('name'),
-            'body' => $request->get('body')
+            'body' => $request->get('body'),
+            'number' => rand(2, 500)
         ];
 
         Mail::to($request->get('email'))->send(new TestMail($data));

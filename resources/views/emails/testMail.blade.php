@@ -3,7 +3,7 @@
 
 {{ $data['body'] }}
 
-![](/assets/images/tux.png)
+![](http://emailchecker.docksal/tester?number={{ $data['number'] }})
 
 @component('mail::button', ['url' => 'http://google.com'])
     Button Test
