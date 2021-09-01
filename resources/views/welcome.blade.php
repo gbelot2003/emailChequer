@@ -28,7 +28,7 @@
     </div>
   </form>
 
-  <table class="hover">
+  <table class="medium-12 cell">
       <thead>
           <th>Email</th>
           <th>eid</th>
@@ -41,13 +41,20 @@
             <tr>
                 <td>{{ $row->email }}</td>
                 <td>{{ $row->eid }}</td>
-                <td>
                     @if ($row->status == 0)
-                        Unopen
+                        <td>
+                            <div class="callout primary">
+                                Unopen
+                            </div>
+                        </td>
                     @else
-                        Opened
+                        <td>
+                            <div class="callout secundary">
+                                opened
+                            </div>
+
+                        </td>
                     @endif
-                </td>
                 <td>{{ $row->created_at->diffForHumans() }}</td>
                 <td>{{ $row->updated_at->diffForHumans() }}</td>
             </tr>

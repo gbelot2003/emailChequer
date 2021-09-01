@@ -35,14 +35,10 @@ class MainControll extends Controller
 
     public function confirmation()
     {
-        $request = \request('email');
-        $request = \request('eid');
-        if (isset($request)){
-            Emailconter::create([
-                'email' => $request,
-                'eid' => $request
-            ]);
-        }
+        $eid = \request('eid');
+        $cdata = Emailconter::where('eid', $eid)->first();
+        $cdata->status = true;
+        $cdata->save();
     }
 
     public function generateRandomString($length = 10) {
