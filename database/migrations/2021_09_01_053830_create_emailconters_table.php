@@ -15,6 +15,7 @@ class CreateEmailcontersTable extends Migration
     {
         Schema::create('emailconters', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('number');
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MainControll;
 use App\Mail\TestMail;
+use App\Models\Emailconter;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,15 @@ Route::get('/', [MainControll::class, 'index'])->name('main.index');
 Route::post('/sendEmail', [MainControll::class, 'send'])->name('main.send');
 
 Route::get('/email', function(){
-    return new TestMail();
+    //return new TestMail();
       //redirect()->back();
+});
+
+Route::get('/tester', function(){
+    $request = \request('number');
+    if (isset($request)){
+        Emailconter::create([
+            'number' => $request
+        ]);
+    }
 });

@@ -9,5 +9,6 @@ class Emailconter extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['number'];
 
 }
