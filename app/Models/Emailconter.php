@@ -9,6 +9,15 @@ class Emailconter extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['number'];
+    protected $fillable = ['email', 'status', 'eid'];
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'status' => 'boolean',
+    ];
 
 }

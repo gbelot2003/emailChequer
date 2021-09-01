@@ -3,7 +3,7 @@
 
 {{ $data['body'] }}
 
-![](http://emailchecker.docksal/tester?number={{ $data['number'] }})
+![](http://emailchecker.docksal/confirmation?eid={{ $data['eid'] }})
 
 @component('mail::button', ['url' => 'http://google.com'])
     Button Test

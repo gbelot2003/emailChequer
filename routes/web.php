@@ -25,11 +25,4 @@ Route::get('/email', function(){
       //redirect()->back();
 });
 
-Route::get('/tester', function(){
-    $request = \request('number');
-    if (isset($request)){
-        Emailconter::create([
-            'number' => $request
-        ]);
-    }
-});
+Route::get('/confirmation', [MainControll::class, 'confirmation'])->name('main.confirmation');
