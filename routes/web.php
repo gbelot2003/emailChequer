@@ -20,9 +20,6 @@ Route::get('/', [MainControll::class, 'index'])->name('main.index');
 
 Route::post('/sendEmail', [MainControll::class, 'send'])->name('main.send');
 
-Route::get('/email', function(){
-    //return new TestMail();
-      //redirect()->back();
-});
-
 Route::get('/confirmation', [MainControll::class, 'confirmation'])->name('main.confirmation');
+
+Route::post('/import', [MainControll::class, 'import'])->name('main.import');
