@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use ErrorException;
 use App\Mail\TestMail;
 use App\Models\Emailconter;
 use Illuminate\Http\Request;
 use App\Helper\HelperFunctions;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 
 class PersonalmailController extends Controller
 {
@@ -39,8 +41,16 @@ class PersonalmailController extends Controller
     public function confirmation()
     {
         $eid = \request('eid');
-        $cdata = Emailconter::where('eid', $eid)->first();
-        $cdata->status = true;
-        $cdata->save();
+
+        try {
+            $cdata = Emailconter::where('eid', $eid)->firstOrFail();
+            $cdata->status = true;
+            $cdata->save();
+        } catch (ErrorException $e) {
+            Log::info('Error on entry.');
+        }
+
+
+
     }
 }

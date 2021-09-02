@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+<html class="no-js" lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <!-- If you delete this meta tag World War Z will become a reality -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,75 +13,84 @@
     <link rel="stylesheet" href="/css/app.css">
 
 
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
-      <!-- optional CDN for Foundation Icons ^^ -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+        type='text/css'>
+    <!-- optional CDN for Foundation Icons ^^ -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Info Banner For Announcements or Links -->
     <!-- <a href="https://zurb.com/university/foundation-intro" class="docs-banner course-banner">
-      <div class="info">
-        <h5 class=""><strong>To master everything new in 6.4, along with the rest of Foundation register for our Aug 8th Webinar Class &rsaquo;</strong></h5>
-      </div>
+    <div class="info">
+        <h5 class="___class_+?4___"><strong>To master everything new in 6.4, along with the rest of Foundation register for our Aug 8th Webinar Class &rsaquo;</strong></h5>
+    </div>
     </a> -->
 
     <!-- <a href="https://zurb.com/wired" id="notice">
-      <div class="info hide-for-small">
+    <div class="info hide-for-small">
         <div id="clockdiv" class="countdown">
             <span class="timer-day days"></span>
             <span class="timer-colon">:</span>
-          <span class="timer-hour hours"></span>
-          <span class="timer-colon">:</span>
-          <span class="timer-hour minutes"></span>
-          <span class="timer-colon">:</span>
-          <span class="timer-seconds seconds"></span>
+            <span class="timer-hour hours"></span>
+            <span class="timer-colon">:</span>
+            <span class="timer-hour minutes"></span>
+            <span class="timer-colon">:</span>
+            <span class="timer-seconds seconds"></span>
         </div>
-      </div>
+    </div>
     </a> -->
+    <!-- Header and Nav -->
 
-
-
-      <!-- Header and Nav -->
-
-      <div class="row">
+    <div class="row">
         <div class="large-3 columns">
-          <h1><img src="https://via.placeholder.com/400x100&text=Logo"></h1>
+            <h1>
+                <a href="/">
+                    <img src="https://via.placeholder.com/400x100&text=Logo">
+                </a>
+            </h1>
         </div>
-      </div>
+        <div class="large-9 columns">
+            <ul>
+                <li><a href="/personal">Personal Email send</a></li>
+            </ul>
+        </div>
+    </div>
 
-      <!-- End Header and Nav -->
+    <!-- End Header and Nav -->
 
 
-      <!-- First Band (Image) -->
+    <!-- First Band (Image) -->
 
-      <div class="row">
+    <div class="row">
         <div class="large-12 columns">
-          <hr>
+            <hr>
         </div>
-      </div>
-      <!-- Second Band (Image Left with Text) -->
+    </div>
+    <!-- Second Band (Image Left with Text) -->
 
-      <div class="row">
+    <div class="row">
         <div class="large-12 columns">
             @yield('content')
         </div>
-      </div>
-
-
-      <!-- Third Band (Image Right with Text) -->
-
-    <div class="row">
-        <div class="large-8 columns">
     </div>
 
 
+    <!-- Third Band (Image Right with Text) -->
+
+    <div class="row">
+        <div class="large-8 columns">
+        </div>
 
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+</body>
+
 </html>
