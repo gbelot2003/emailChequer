@@ -2,32 +2,6 @@
 
 @section('content')
 
-<form method="post" action="/sendEmail">
-    @csrf
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="medium-12 cell">
-            <label>Email
-              <input type="email" name="email" placeholder="email">
-            </label>
-          </div>
-        <div class="medium-12 cell">
-          <label>Name
-            <input type="text" name="name" placeholder="Name">
-          </label>
-        </div>
-        <div class="medium-12 cell">
-          <label>Body
-            <textarea name="body" rows="5"></textarea>
-          </label>
-        </div>
-        <div class="medium-12 cell">
-            <button class="success button">Send</button>
-        </div>
-      </div>
-    </div>
-  </form>
-
   @if($message = Session::get('success'))
   <div class="alert alert-success alert-block">
    <button type="button" class="close" data-dismiss="alert">×</button>
@@ -56,8 +30,6 @@
     </table>
    </div>
   </form>
-
-
 
   <table class="medium-12 cell">
       <thead>

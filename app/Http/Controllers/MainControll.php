@@ -33,32 +33,4 @@ class MainControll extends Controller
         return redirect('/')->with('success', 'All good!');
 
     }
-
-    public function send(Request $request)
-    {
-        $helper = new HelperFunctions();
-
-        $conter = Emailconter::create([
-            'email' => $request->get('email'),
-            'status' => false,
-            'eid' => $helper->generateRandomString(25)
-        ]);
-
-        $data = [
-            'name' => $request->get('name'),
-            'body' => $request->get('body'),
-            'eid' => $conter->eid
-        ];
-
-        Mail::to($request->get('email'))->send(new TestMail($data));
-        return redirect()->back();
-    }
-
-    public function confirmation()
-    {
-        $eid = \request('eid');
-        $cdata = Emailconter::where('eid', $eid)->first();
-        $cdata->status = true;
-        $cdata->save();
-    }
 }
